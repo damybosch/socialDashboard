@@ -1,55 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<body id="body" data-scheme="light">
+  <div class="container">
+  <h1>Social Media Dashboard</h1>
+  <p>Total Followers: 23,004</p>
 
-  Dark Mode
+  <div id="scheme-toggle">Dark Mode</div>
 
+  <div class="cards cards-large">
+    <div class="card color-facebook">
+      <div class="platform"><img src="images/icon-facebook.svg" alt=""> @nathanf</div>
+      <div class="followers">
+        <h1>1987</h1>
+        <p>Followers</p>
+      </div>
+      <div class="countToday">
+        <p class="text-green">12 Today <img src="images/icon-up.svg" alt=""></p>
+      </div>
+    </div>
+
+    <div class="card color-twitter">
+      <div class="platform"><img src="images/icon-twitter.svg" alt=""> @nathanf</div>
+      <div class="followers">
+        <h1>1044</h1>
+        <p>Followers</p>
+      </div>
+      <div class="countToday">
+        <p class="text-green">99 Today <img src="images/icon-up.svg" alt=""></p>
+      </div>
+    </div>
+
+    <div class="card color-instagram">
+      <div class="platform"><img src="images/icon-instagram.svg" alt=""> @realnathanf</div>
+      <div class="followers">
+        <h1>11k</h1>
+        <p>Followers</p>
+      </div>
+      <div class="countToday">
+        <p class="text-green">1099 Today <img src="images/icon-up.svg" alt=""></p>
+      </div>
+    </div>
+
+    <div class="card color-youtube">
+      <div class="platform"><img src="images/icon-youtube.svg" alt=""> Nathan F.</div>
+      <div class="followers">
+        <h1>8239</h1>
+        <p>Followers</p>
+      </div>
+      <div class="countToday">
+        <p class="text-red">144 Today <img src="images/icon-down.svg" alt=""></p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Overview - Today</h2>
+  <div class="cards cards-small">
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-facebook.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-facebook.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-twitter.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-twitter.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards cards-small">
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-instagram.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-instagram.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-youtube.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div>
+        <p>Page Views</p>
+        <h2>82</h2>
+      </div>
+      <div>
+        <img src="images/icon-youtube.svg" alt="">
+        <span class="text-green"><img src="images/icon-up.svg" alt=""> 3%</span>
+      </div>
+    </div>
+  </div>
   
 
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
+</div>
 
   Likes
   52
@@ -78,10 +190,14 @@
   Total Views
   1407
   12%
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+  <script src="assets/js/scripts.js"></script>
 </body>
+
 </html>
